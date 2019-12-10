@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ch.usi.si.codelounge</groupId>
-    <artifactId>jSicko</artifactId>
+    <artifactId>assignment5</artifactId>
     <version>1.0.0-M3</version>
 
     <properties>
@@ -15,13 +15,13 @@
         <jdk.version>1.10</jdk.version>
     </properties>
 
-<distributionManagement>
-                <repository>
-                <id>bintray-codelounge-ch.usi.si.codelounge</id>
-                <name>codelounge-ch.usi.si.codelounge</name>
-                <url>https://api.bintray.com/maven/codelounge/ch.usi.si.codelounge/jSicko/;publish=1</url>
-                </repository>
-</distributionManagement>
+    <repositories>
+        <repository>
+        <id>bintray-codelounge-ch.usi.si.codelounge</id>
+        <name>codelounge-ch.usi.si.codelounge</name>
+        <url>https://api.bintray.com/maven/codelounge/ch.usi.si.codelounge/jSicko/;publish=1</url>
+        </repository>
+    </repositories>
 
     <build>
         <pluginManagement>
@@ -124,7 +124,11 @@
             <artifactId>guava</artifactId>
             <version>28.1-jre</version>
         </dependency>
+
+        <dependency>
+            <groupId>ch.usi.si.codelounge</groupId>
+            <artifactId>jSicko</artifactId>
+            <version>1.0.0-M3</version>
+        </dependency>
     </dependencies>
-
-
 </project>
